@@ -1,19 +1,469 @@
-
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Menù del Ristorante</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Menù del Ristorante</h1>
-    <div class="menu-grid">
-        <a href="antipasti.html">Antipasti</a>
-        <a href="primi.html">Primi</a>
-        <a href="secondi.html">Secondi</a>
-        <a href="dolci.html">Dolci</a>
-        <a href="bevande.html">Bevande</a>
-    </div>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Luxe Moto</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/kanit.css" type="text/css">
+  </head>
+  <body>
+
+    <section id="center-menu">
+      <div class="body-menu">
+        <div class="menu-left">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a id="catalogo" href="">Catalogo<span id="catalogo-triangle" class="triangle-down"></span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-center">
+          <a href="index.html"><img src="images/logo.png" alt="logo" class="small-image" draggable="false"></a>
+        </div>
+        <div class="menu-right">
+          <ul>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">Test</a></li>
+          </ul>
+        </div>
+      </div>
+      <section class="catalogo-dropdown closed">
+        <div class="moto-catalogo">
+          <ul>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="yamaha" href="#">Yamaha<span id="yamaha-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="suzuki" href="#">Suzuki<span id="suzuki-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="honda" href="#">Honda<span id="honda-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="kawasaki" href="#">Kawasaki<span id="kawasaki-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="bmw" href="#">BMW<span id="bmw-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="ktm" href="#">KTM<span id="ktm-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="ducati" href="#">Ducati<span id="ducati-triangle" class="triangle-down"></span></a></li>
+            <li class="dropdown-menu"><a class="dropdown-toggle" id="aprilia" href="#">Aprilia<span id="aprilia-triangle" class="triangle-down"></span></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bikes-dropdown closed" id="yamaha-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R1M/R1M-Side.jpg" onmouseover="src='images/Yamaha/R1M/R1M-Side-Front.jpg'" onmouseout="src='images/Yamaha/R1M/R1M-Side.jpg'" alt="R1M">
+              <span class="bike-name">R1M</span>
+              <span class="bike-price">Da 27.999,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R1/R1-Blue-Side.jpg" onmouseover="src='images/Yamaha/R1/R1-Blue-Side-Front.jpg'" onmouseout="src='images/Yamaha/R1/R1-Blue-Side.jpg'" alt="R1">
+              <span class="bike-name">R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R7/R7-Blue-Side.jpg" onmouseover="src='images/Yamaha/R7/R7-Blue-Side-Front.jpg'" onmouseout="src='images/Yamaha/R7/R7-Blue-Side.jpg'" alt="R7">
+              <span class="bike-name">R7</span>
+              <span class="bike-price">Da 9.799,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R6 Race/R6-Side.jpg" onmouseover="src='images/Yamaha/R6 Race/R6-Side-Front.jpg'" onmouseout="src='images/Yamaha/R6 Race/R6-Side.jpg'" alt="R6 Race">
+              <span class="bike-name">R6 Race</span>
+              <span class="bike-price">Da 14.199,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R3/R3-Side.jpg" onmouseover="src='images/Yamaha/R3/R3-Side-Front.jpg'" onmouseout="src='images/Yamaha/R3/R3-Side.jpg'" alt="R3">
+              <span class="bike-name">R3</span>
+              <span class="bike-price">Da 6.799,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/R125/R125-Side.jpg" onmouseover="src='images/Yamaha/R125/R125-Side-Front.jpg'" onmouseout="src='images/Yamaha/R125/R125-Side.jpg'" alt="R125">
+              <span class="bike-name">R125</span>
+              <span class="bike-price">Da 5.799,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/MT-10 SP/MT-10 SP-Side.jpg" onmouseover="src='images/Yamaha/MT-10 SP/MT-10 SP-Side-Front.jpg'" onmouseout="src='images/Yamaha/MT-10 SP/MT-10 SP-Side.jpg'" alt="MT-10 SP">
+              <span class="bike-name">MT-10 SP</span>
+              <span class="bike-price">Da 19.299,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/XSR900 GP/XSR900 GP-Side.jpg" onmouseover="src='images/Yamaha/XSR900 GP/XSR900 GP-Side-Front.jpg'" onmouseout="src='images/Yamaha/XSR900 GP/XSR900 GP-Side.jpg'" alt="XSR900 GP">
+              <span class="bike-name">XSR900 GP</span>
+              <span class="bike-price">Da 13.499,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="suzuki-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/Hayabusa/Hayabusa-Side.webp" onmouseover="src='images/Suzuki/Hayabusa/Hayabusa-Side-Front.webp'" onmouseout="src='images/Suzuki/Hayabusa/Hayabusa-Side.webp'" alt="Hayabusa">
+              <span class="bike-name">Hayabusa</span>
+              <span class="bike-price">Da 19.890,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/Katana/Katana-Side.webp" onmouseover="src='images/Suzuki/Katana/Katana-Side-Front.webp'" onmouseout="src='images/Suzuki/Katana/Katana-Side.webp'" alt="Katana">
+              <span class="bike-name">Katana</span>
+              <span class="bike-price">Da 14.190,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/GSX-S1000/GSX-S1000-Side.webp" onmouseover="src='images/Suzuki/GSX-S1000/GSX-S1000-Side-Front.webp'" onmouseout="src='images/Suzuki/GSX-S1000/GSX-S1000-Side.webp'" alt="GSX-S1000">
+              <span class="bike-name">GSX-S1000</span>
+              <span class="bike-price">Da 13.490,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/GSX-S1000GT/GSX-S1000GT-Side.webp" onmouseover="src='images/Suzuki/GSX-S1000GT/GSX-S1000GT-Side-Front.webp'" onmouseout="src='images/Suzuki/GSX-S1000GT/GSX-S1000GT-Side.webp'" alt="Yamaha R1">
+              <span class="bike-name">GSX-S1000GT</span>
+              <span class="bike-price">Da 15.990,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/GSX-8S/GSX-8S-Side.webp" onmouseover="src='images/Suzuki/GSX-8S/GSX-8S-Side-Front.webp'" onmouseout="src='images/Suzuki/GSX-8S/GSX-8S-Side.webp'" alt="Yamaha R1">
+              <span class="bike-name">GSX-8S</span>
+              <span class="bike-price">Da 8.900,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Suzuki/GSX-8R/GSX-8R-Side.webp" onmouseover="src='images/Suzuki/GSX-8R/GSX-8R-Side-Front.webp'" onmouseout="src='images/Suzuki/GSX-8R/GSX-8R-Side.webp'" alt="Yamaha R1">
+              <span class="bike-name">GSX-8R</span>
+              <span class="bike-price">Da 9.700,00 €</span>
+            </a>
+            <!--
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>  -->
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="honda-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Honda</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Honda/CBR1000RR-R/CBR1000RR-R-Side.png" onmouseover="src='images/Honda/CBR1000RR-R/CBR1000RR-R-Side-Front.png'" onmouseout="src='images/Honda/CBR1000RR-R/CBR1000RR-R-Side.png'" alt="CBR1000RR-R">
+              <span class="bike-name">CBR1000RR-R</span>
+              <span class="bike-price">Da 23.490,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="kawasaki-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">kawasaki</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="bmw-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">bmw</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="ktm-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">ktm</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="ducati-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">ducati</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bikes-dropdown closed" id="aprilia-dropdown">
+        <div class="grid">
+          <div class="gridscroll">
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">aprilia</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+            <a href="#" class="block">
+              <img class="bike-img" src="images/Yamaha/YamahaR1/no-background/Yamaha-Side.png" onmouseover="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side-Front.png'" onmouseout="src='images/Yamaha/YamahaR1/no-background/Yamaha-Side.png'" alt="Yamaha R1">
+              <span class="bike-name">Yamaha R1</span>
+              <span class="bike-price">Da 20.699,00 €</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    
+
+    <section id="center-page">
+      <div class="page">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="images/Yamaha/R1/2024-Yamaha-YZF1000R1-EU-Icon_Blue-Static-0499-01.jpg" alt="Yamaha R1" draggable="false">
+            <div class="info-box">
+              <div class="text info-bike-brand"><a href="https://www.yamaha-motor.eu/it/it/home/">Yamaha</a></div>
+              <div class="text info-bike-name">YZF R1</div>
+              <div class="text info-bike-price">A partire da 20.699,00 €</div>
+              <a class="info-button" href = "https://www.yamaha-motor.eu/it/it/motorcycles/supersport/pdp/r1-2024/">Scopri di più</a>
+            </div>
+          </div>
+          <div class="mySlides">
+            <img src="images/BMW/S1000RR/BMW-S1000RR-(corsia-box).jpg" alt="BMW S1000RR" draggable="false">
+            <div class="info-box">
+              <div class="text info-bike-brand"><a href="https://www.bmw-motorrad.it/it/home.html#/filter-tutto">BMW</a></div>
+              <div class="text info-bike-name">S 1000 RR</div>
+              <div class="text info-bike-price">A partire da 21.450,00 €</div>
+              <a class="info-button" href = "https://www.bmw-motorrad.it/it/models/sport/s1000rr.html">Scopri di più</a>
+            </div>
+          </div>
+          <div class="mySlides">
+            <img src="images/Ducati/Diavel/Ducati-Diavel-V4-MY23-hero-1600x1000-02.webp" alt="Ducati Panigale V4S" draggable="false">
+            <div class="info-box">
+              <div class="text info-bike-brand"><a href="https://www.ducati.com/it/it/home">Ducati</a></div>
+              <div class="text info-bike-name">Diavel</div>
+              <div class="text info-bike-price">A partire da 26.890,00 €</div>
+              <a class="info-button" href="https://www.ducati.com/it/it/moto/panigale/panigale-v4">Scopri di più</a>
+            </div>
+          </div>
+
+          <div class="dots-align">
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+          </div>
+        </div>
+        
+      </div>
+
+      <h1 class="work">still working...</h1>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
